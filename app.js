@@ -15,9 +15,13 @@ function errorhandler(error) {
 
 function process(text) {
 
-    var inputText = generateUrl(text)
-    fetch(inputText).then(response => response.json()).then(json => console.log(json)).catch(errorhandler)
-    userOutput.value = document.contents.translated;
+    console.log("clicked!")
+    var inputText = userInput.value
+    fetch(generateUrl(inputText)).then(response => response.json()).then(json => {
+        var displayOutput = json.contents.translated
+        userOutput.innerText = displayOutput
+    }).catch(errorhandler)
+    
 }
 
 btnTranslate.addEventListener("click",process(text))
