@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@1,300;1,700&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap');
+
+:root {
+    --primary-color: #F2C94C;
+}
+
+#banana_talk {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    margin: 0px;
+}
+
+.header_banana {
+    background-color: var(--primary-color);
+    margin: 0px 0px 5rem 0px;
+    padding: 1.5rem 0rem;
+    text-align: center;
+}
+
+.txt_input {
+    padding: 1rem;
+    width: 50%;
+    height: 5rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+}
+
+#btn_input {
+    max-width: 50%;
+    margin: auto;
+    background-color: var(--primary-color);
+    padding: 1.5rem 4rem;
+    border: 1ps solid var(--primary-color);
+    font-size: larger;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    display: block;
+}
+
+.output_banana {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.txt_output {
+    border: 1px solid gray;
+}
+
+.footer_banana {
+    margin-top: 5rem;
+    margin-bottom: 0px;
+}
+
+.footer-head {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+p {
+    max-width: 60%;
+    margin: auto;
+}
