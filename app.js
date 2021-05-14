@@ -9,13 +9,11 @@ function generateUrl(text) {
 }
 
 function errorhandler(error) {
-    console.log("error occured"+error)
     alert("Something went wrong with server!")
 }
 
-function process(text) {
+function process() {
 
-    console.log("clicked!")
     var inputText = userInput.value
     fetch(generateUrl(inputText)).then(response => response.json()).then(json => {
         var displayOutput = json.contents.translated
@@ -24,4 +22,4 @@ function process(text) {
     
 }
 
-btnTranslate.addEventListener("click",process(text))
+btnTranslate.addEventListener("click",process())
