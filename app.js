@@ -1,4 +1,4 @@
-var userInput = document.querySelector(".txt_input");
+var userInput = document.querySelector(".txtInOut");
 var btnTranslate = document.querySelector("#btn_input");
 var userOutput = document.querySelector(".txt_output");
 
@@ -14,6 +14,7 @@ function errorhandler(error) {
 
 function process() {
     // var inputText = userInput.value
+    console.log(userInput.value)
     fetch(generateUrl(userInput.value)).then(response => response.json()).then(json => {
         var displayOutput = json.contents.translated
         userOutput.innerText = displayOutput
